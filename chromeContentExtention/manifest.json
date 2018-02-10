@@ -1,0 +1,19 @@
+{
+	"name" : "Skip Add",
+	"version" : "1.0",
+	"manifest_version" : 2,
+	"description" : "skip advertising site go to direct link",
+	"browser_action": {
+		"default_icon" : "skip.png"
+	},
+	"content_scripts":[ {
+		"matches" :["<all_urls>"],
+		"js" :["content.js"]
+
+		}
+	],
+	"background" : {
+		"scripts" : ["background.js"]
+	}
+
+}
